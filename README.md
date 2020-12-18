@@ -20,10 +20,10 @@ Modificación del la app cuidAR (Covid19-AR) para dispositivos con android kitka
   7.Listo
   
 ## Tareas finales
-  . editar los recursos (temas, layouts, drawables) imcompatibles
-  . quitar apis imcopatibles con kikat editando los archivos __.smali__
-  . es un quilombo, hasta alli nomas explico
+Editar los recursos (temas, layouts, drawables) imcompatibles<br>
+Quitar apis imcopatibles con kikat editando los archivos __.smali__<br>
+Es un quilombo, hasta alli nomas explico<br>
   
   
 ## Descargas
-desde la pestaña de releases. usenlo bajo su propio riesgo
+Desde la pestaña de releases. Usenlo bajo su propio riesgo
