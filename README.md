@@ -15,9 +15,9 @@ Modificación del la app cuidAR (Covid19-AR) para dispositivos con android kitka
   2. abra el apk previamente compilado y copie la carpeta __lib__
   3. pegue la capeta adentro de los archivos de la app cuidAR
   4. abra la carpeta lib (de cuidAR) y con un editor hexadecimal cambie 2 cadenas de texto presente en todos los archivos __libnative-lib.so__
-    4a. reemplaze `LIBC` por `LIBK` (solo aparece una vez)
-    4b. reemplaze `libc.so` por `libk.so` (solo aparece una vez)
-  5.Listo
+  5. reemplaze `LIBC` por `LIBK` (solo aparece una vez)
+  6. reemplaze `libc.so` por `libk.so` (solo aparece una vez)
+  7.Listo
   
 ## Tareas finales
   . editar los recursos (temas, layouts, drawables) imcompatibles
