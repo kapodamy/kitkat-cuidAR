@@ -38,8 +38,10 @@ public final class KitKat {
         //    return ctx.getDrawable(id);
         //return  ctx.getResources().getDrawable(id);*/
         //return ResourcesCompat.getDrawable(ctx.getResources(), id, null);
-        return ctx.getResources().getDrawable(id);
-
+        if (id == 0)
+            return new EmptyDrawable();
+        else
+            return ctx.getResources().getDrawable(id);
     }
 
     public static int getColor(Context ctx, @ColorRes int id) {
@@ -127,6 +129,15 @@ public final class KitKat {
         return bundle;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public static void stopNestedScroll(View view) {
+        try {
+            view.stopNestedScroll();
+        } catch (Exception e) {
+            // nothing to do
+        }
+    }
+
     public static void installTls12FromGooglePlayServices(Context ctx) {
         try {
             ProviderInstaller.installIfNeeded(ctx);
@@ -134,6 +145,10 @@ public final class KitKat {
             Log.e("KiKat", "ProviderInstaller.installIfNeeded() failed", err);
         }
     }
+
+    private static void Log(String method) {
+        Log.d("KitKat", method + "\n" + Log.getStackTraceString(new Exception()));
+    }    
 
     /*public static void setupHttpLogging(OkHttpClient.Builder builder) {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();

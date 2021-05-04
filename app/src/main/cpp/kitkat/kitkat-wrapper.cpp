@@ -854,7 +854,9 @@ extern "C" ssize_t __read_chk(int fd, void* buf, size_t count, size_t buf_size) 
 void *load_symbol(const char *name) {
     void *ptr = dlsym(lib, name);
     if (!ptr) {
-        LOG(ANDROID_LOG_ERROR, "can not load symbol \"%s\". reason: %s", name, dlerror());
+        LOG(ANDROID_LOG_ERROR,
+            "load_symbol() failed to load symbol \"%s\". reason: %s",
+            name, dlerror());
     }
     return ptr;
 }
