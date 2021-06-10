@@ -1,0 +1,32 @@
+modificaciones manuales:
+   (opcional) Ldalvik/system/DelegateLastClassLoader; (usado por google dynamite, modificar comprobacion a Build.VERSION)
+   agregar clases:      android.util.Size     android.util.SizeF      wrapper.*       xandroid.*
+                  
+CovidApplication.smali (opcional):
+   comprobacion SDK_INT
+   evitar creacion de instancia Landroid/app/NotificationChannel;
+
+eliminar "R.anim.abc_btn_check_material_anim":
+    * del archivo public.xml
+    * de la carpeta anim
+    * su ID de referencia en los smalis
+
+en "ContextCompat.java" quitar (evitar el acceso a servicios a nivel API 21):
+    const-class v1, Landroid/hardware/camera2/CameraManager;
+    const-class v1, Landroid/app/usage/UsageStatsManager;
+    const-class v1, Landroid/app/job/JobScheduler;
+    const-class v1, Landroid/content/pm/LauncherApps;
+    const-class v1, Landroid/media/projection/MediaProjectionManager;
+    const-class v1, Landroid/media/session/MediaSessionManager;
+    const-class v1, Landroid/content/RestrictionsManager;
+    const-class v1, Landroid/telecom/TelecomManager;
+    const-class v1, Landroid/media/tv/TvInputManager;
+
+en "com.google.android.gms:play-services-measurement@@18.0.0" (son varios) (opcional)
+alterar comprobacion VERSION;->SDK_INT:I (evitar instancia de Landroid/app/job/JobScheduler;)
+
+
+en activity_main.xml poner "android:fitsSystemWindows" en "false"
+en el archivo public.xml: purgar todos los recursos eliminados (archivos de la carpeta res)
+convertir todos los graficos vectoriales (archivos XML con el tag <vector>) en PNG (excepto el archivo abc_vector_test.xml
+(muy largo) "portear" styles.xml

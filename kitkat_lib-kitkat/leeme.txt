@@ -1,0 +1,8 @@
+Aplicación del parche de soporte para KitKat (Android 4.4.2)
+
+1_ copiar las librerias "libk.so" a cada carpeta correspondiente en la aplicación cuidAR
+2_ modificar cada "libnative-lib.so" de la aplicación cuidAR, buscar y reemplazar dentro del archivo:
+   2a_ "LIBC" --> "LIBK"
+   2b_ "libc.so" --> "libk.so"
+   (usar editor hexadecimal o quizas Notepad++)
+
