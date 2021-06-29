@@ -91,7 +91,6 @@ del res\drawable\ic_chevron_right.xml
 del res\drawable\ic_clock_black_24dp.xml
 del res\drawable\ic_keyboard_black_24dp.xml
 del res\drawable\ic_notifications.xml
-del res\drawable\material_cursor_drawable.xml
 del res\drawable\design_ic_visibility.xml
 del res\drawable\design_ic_visibility_off.xml
 del res\drawable\abc_dialog_material_background.xml
@@ -160,5 +159,5 @@ copy /Y kitkat_res\drawable-ldpi\ic_splash_cuidar.png       res\drawable-ldpi\ic
 copy /Y kitkat_res\drawable-mdpi\ic_splash_cuidar.png       res\drawable-mdpi\ic_splash_cuidar.png  
 
 
-pause
+pause 1>&2
 

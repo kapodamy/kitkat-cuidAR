@@ -23,10 +23,16 @@ en "ContextCompat.java" quitar (evitar el acceso a servicios a nivel API 21):
     const-class v1, Landroid/media/tv/TvInputManager;
 
 en "com.google.android.gms:play-services-measurement@@18.0.0" (son varios) (opcional)
-alterar comprobacion VERSION;->SDK_INT:I (evitar instancia de Landroid/app/job/JobScheduler;)
+    alterar comprobacion VERSION;->SDK_INT:I (evitar instancia de Landroid/app/job/JobScheduler;)
 
 
-en activity_main.xml poner "android:fitsSystemWindows" en "false"
-en el archivo public.xml: purgar todos los recursos eliminados (archivos de la carpeta res)
-convertir todos los graficos vectoriales (archivos XML con el tag <vector>) en PNG (excepto el archivo abc_vector_test.xml
+en activity_main.xml:
+    poner "android:fitsSystemWindows" en "false"
+
+en el archivo public.xml:
+    purgar todos los recursos eliminados (archivos de la carpeta res)
+
+convertir todos los graficos vectoriales (archivos XML con el tag <vector>) en PNG (excepto el archivo abc_vector_test.xml)
+    -
 (muy largo) "portear" styles.xml
+    -
