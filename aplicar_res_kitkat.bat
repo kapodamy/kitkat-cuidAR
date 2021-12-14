@@ -94,6 +94,14 @@ del res\drawable\ic_notifications.xml
 del res\drawable\design_ic_visibility.xml
 del res\drawable\design_ic_visibility_off.xml
 del res\drawable\abc_dialog_material_background.xml
+del res\drawable\ic_estadio.xml
+del res\drawable\ic_health_info.xml
+del res\drawable\ic_home.xml
+del res\drawable\ic_home_certs.xml
+del res\drawable\ic_home_health_info.xml
+del res\drawable\ic_home_vacation_certs.xml
+del res\drawable\ic_vaccination_complete.xml
+del res\drawable\ic_vaccination_started.xml
 
 copy /Y kitkat_res\drawable\abc_ic_ab_back_material.png                        res\drawable\abc_ic_ab_back_material.png
 copy /Y kitkat_res\drawable\abc_ic_arrow_drop_right_black_24dp.png             res\drawable\abc_ic_arrow_drop_right_black_24dp.png
@@ -149,6 +157,14 @@ copy /Y kitkat_res\drawable\ic_notifications.png                               r
 copy /Y kitkat_res\drawable\design_ic_visibility_off.png                       res\drawable\design_ic_visibility_off.png
 copy /Y kitkat_res\drawable\design_ic_visibility.png                           res\drawable\design_ic_visibility.png
 copy /Y kitkat_res\drawable\abc_dialog_material_background.xml                 res\drawable\abc_dialog_material_background.xml
+copy /Y kitkat_res\drawable\ic_estadio.png                                     res\drawable\ic_estadio.png
+copy /Y kitkat_res\drawable\ic_health_info.png                                 res\drawable\ic_health_info.png
+copy /Y kitkat_res\drawable\ic_home.png                                        res\drawable\ic_home.png
+copy /Y kitkat_res\drawable\ic_home_certs.png                                  res\drawable\ic_home_certs.png
+copy /Y kitkat_res\drawable\ic_home_health_info.png                            res\drawable\ic_home_health_info.png
+copy /Y kitkat_res\drawable\ic_home_vacation_certs.png                         res\drawable\ic_home_vacation_certs.png
+copy /Y kitkat_res\drawable\ic_vaccination_complete.png                        res\drawable\ic_vaccination_complete.png
+copy /Y kitkat_res\drawable\ic_vaccination_started.png                         res\drawable\ic_vaccination_started.png
 
 rem opcional
 copy /Y kitkat_res\drawable-xxxhdpi\ic_splash_cuidar.png    res\drawable-xxxhdpi\ic_splash_cuidar.png
